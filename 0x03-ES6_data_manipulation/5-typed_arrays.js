@@ -4,7 +4,7 @@ export default function createInt8TypedArray(length, position, value) {
   const val = new DataView(array);
   try {
     val.setInt8(position, value);
-  } catch (message) {
+  } catch (e) {
     throw new Error(message);
   }
   return val;
