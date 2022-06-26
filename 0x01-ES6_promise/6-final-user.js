@@ -7,7 +7,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       value.forEach((val) => {
         const result = val;
         if (result.reason) {
-          const err = result.reason.toString();
+          const err = result.reason;
           delete result.reason;
           result.value = err;
         }
