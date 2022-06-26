@@ -8,9 +8,10 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
         const result = val;
         if (result.reason) {
           const err = result.reason.toString();
-          result.reason = err;
+          delete result.reason;
+          result.value = err;
         }
-	return val;
+        return val;
       });
     });
 }
