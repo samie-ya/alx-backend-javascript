@@ -7,11 +7,11 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       value.forEach((val) => {
         const result = val;
         if (result.reason) {
-          const err = result.reason;
+          const err = result.reason.toString();
           delete result.reason;
           result.value = err;
         }
-        return val;
       });
+      return value;
     });
 }
