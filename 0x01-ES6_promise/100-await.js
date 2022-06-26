@@ -1,8 +1,11 @@
 import { uploadPhoto, createUser } from './utils';
 
 export default async function asyncUploadUser() {
+  const dict = {}
   try {
-    return { photo: await uploadPhoto(), user: await createUser() };
+    dict.photo: await uploadPhoto();
+    dict.user: await createUser();
+    return dict;
   } catch (e) {
     return { photo: null, user: null };
   }
