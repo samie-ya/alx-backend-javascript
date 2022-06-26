@@ -10,6 +10,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
           const err = result.reason.toString();
           result.reason = err;
         }
+	return val;
       });
     });
 }
