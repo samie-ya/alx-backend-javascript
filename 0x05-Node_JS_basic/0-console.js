@@ -1,5 +1,8 @@
 // This script will display message to STDOUT
 
-module.exports = function displayMessage(string) {
-  process.stdout.write(string + '\n');
+function displayMessage(string) {
+  process.stdout.write(string);
+  process.stdout.write('\n');
 }
+
+module.exports = displayMessage;
