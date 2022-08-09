@@ -50,13 +50,9 @@ const app = http.createServer((request, response) => {
           response.end(string);
         });
       break;
-    case '/':
+    default:
       response.writeHead(200);
       response.end('Hello Holberton School!');
-      break;
-    default:
-      response.writeHead(404);
-      response.end('Resource Not Found');
   }
 });
 
