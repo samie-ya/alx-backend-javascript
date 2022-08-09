@@ -51,7 +51,7 @@ const app = http.createServer((request, response) => {
             response.end(string);
           });
       } else {
-        throw new Error('Cannot load the database');
+        response.end('This is the list of our students');
       }
       break;
     default:
