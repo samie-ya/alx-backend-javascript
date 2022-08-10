@@ -53,7 +53,9 @@ app.get('/students', (request, response) => {
         response.send(string);
       });
   } else {
-    response.send('This is the list of our students');
+    const string = 'This is the list of our students\n'
+                   + 'Cannot load the database';
+    response.send(string);
   }
 });
 
