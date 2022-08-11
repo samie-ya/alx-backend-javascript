@@ -39,6 +39,7 @@ describe('Cart page', () => {
     request('http://localhost:7865/cart/12', (error, resp, body) => {
       expect(body).to.be.a('string');
     });
+    done();
   });
   it('Testing failure of request', (done) => {
     request('http://localhost:7865/cart/hello', (error, resp, body) => {
