@@ -1,8 +1,7 @@
 // This script will test calcul
 
-const { calculateNumber } = require('./2-calcul_chai.js');
+const calculateNumber = require('./2-calcul_chai');
 const chai = require('chai');
-const assert = require('assert');
 const expect = chai.expect
 
 describe('calculate Summation', () => {
