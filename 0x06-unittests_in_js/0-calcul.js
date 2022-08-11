@@ -1,3 +1,7 @@
 // This script will round number and sum it up
 
-module.exports.calculateNumber = (a, b) => Math.round(a) + Math.round(b);
+function calculateNumber (a, b) {
+  return Math.round(a) + Math.round(b);
+}
+
+module.exports = calculateNumber;
