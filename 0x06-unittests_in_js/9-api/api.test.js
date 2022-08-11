@@ -6,6 +6,24 @@ const expect = chai.expect;
 
 describe('Cart page', () => {
   it('Testing response of a request', (done) => {
+    request('http://localhost:7865', (error, resp, body) => {
+      expect(resp.statusCode).to.be.equal(200);
+    });
+    done();
+  });
+  it('Testing body of a request', (done) => {
+    request('http://localhost:7865', (error, resp, body) => {
+      expect(body).to.be.equal('Welcome to the payment system');
+    });
+    done();
+  });
+  it('Testing type of body', (done) => {
+    request('http://localhost:7865', (error, resp, body) => {
+      expect(body).to.be.a('string');
+    });
+    done();
+  });
+  it('Testing response of a request', (done) => {
     request('http://localhost:7865/cart/12', (error, resp, body) => {
       expect(resp.statusCode).to.be.equal(200);
     });
@@ -21,7 +39,6 @@ describe('Cart page', () => {
     request('http://localhost:7865/cart/12', (error, resp, body) => {
       expect(body).to.be.a('string');
     });
-    done();
   });
   it('Testing failure of request', (done) => {
     request('http://localhost:7865/cart/hello', (error, resp, body) => {
