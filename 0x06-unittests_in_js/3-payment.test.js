@@ -10,6 +10,7 @@ describe('Spying on calculateNumber', () => {
   it('I spy with my little eye', () => {
     const spy = sinon.spy(Utils, 'calculateNumber');
     sendPaymentRequestToApi(100, 20);
-    expect(spy.calledOnceWith('SUM', 100, 20)).to.be.true;
+    expect(spy.calledWith('SUM', 100, 20)).to.be.true;
+    spy.restore();
   });
 });
