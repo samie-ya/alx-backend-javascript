@@ -72,13 +72,13 @@ describe('Whole page', () => {
     done();
   });
   it('Testing body of a request', (done) => {
-    request.post({ headers: { 'content-type': 'application/json' }, url: 'http://localhost:7865/login', form: { userName: 'Samra' } }, (error, resp, body) => {
+    request.post({ headers: { 'Content-Type': 'application/json' }, url: 'http://localhost:7865/login', form: { userName: 'Samra' } }, (error, resp, body) => {
       expect(body).to.be.equal('Welcome Samra');
     });
     done();
   });
   it('Testing type of body of a request', (done) => {
-    request.post({ headers: { 'content-type': 'application/json' }, url: 'http://localhost:7865/login', form: { userName: 'Samra' } }, (error, resp, body) => {
+    request.post({ headers: { 'Content-Type': 'application/json' }, url: 'http://localhost:7865/login', form: { userName: 'Samra' } }, (error, resp, body) => {
       expect(body).to.be.a('string');
     });
     done();
