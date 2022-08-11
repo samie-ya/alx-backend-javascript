@@ -25,9 +25,6 @@ describe('calculate Summation', () => {
   it('...', () => {
     assert.strictEqual(calculateNumber('SUM', 0.01, -1.2), -1);
   });
-});
-
-describe('calculate Subtraction', () => {
   it('...', () => {
     assert.strictEqual(calculateNumber('SUBTRACT', 1.2, 0.9), 0);
   });
@@ -49,9 +46,6 @@ describe('calculate Subtraction', () => {
   it('...', () => {
     assert.strictEqual(calculateNumber('SUBTRACT', 0.01, -1.2), 1);
   });
-});
-
-describe('calculate Divide', () => {
   it('...', () => {
     assert.strictEqual(calculateNumber('DIVIDE', 1.2, 0.9), 1);
   });
