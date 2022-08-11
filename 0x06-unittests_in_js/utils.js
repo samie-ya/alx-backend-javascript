@@ -1,6 +1,6 @@
 // This script will craete an object
 
-module.exports.Utils = {
+const Utils = {
   calculateNumber: (type, a, b) => {
     if (type === 'SUM') {
       return Math.round(a) + Math.round(b);
@@ -17,3 +17,5 @@ module.exports.Utils = {
     }
   }
 };
+
+module.exports = Utils;

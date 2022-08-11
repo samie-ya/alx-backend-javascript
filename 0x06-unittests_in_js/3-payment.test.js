@@ -1,7 +1,7 @@
 // This script will create a spy test
 
-const { Utils } = require('./utils.js');
-const { sendPaymentRequestToApi } = require('./3-payment.js');
+const Utils = require('./utils');
+const sendPaymentRequestToApi = require('./3-payment');
 const sinon = require('sinon');
 const chai = require('chai');
 const expect = chai.expect;
