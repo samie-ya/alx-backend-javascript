@@ -1,6 +1,6 @@
 // This script will test a promise
 
-const { getPaymentTokenFromAPI } = require('./6-payment_token.js');
+const getPaymentTokenFromAPI = require('./6-payment_token');
 const assert = require('assert');
 
 describe('Testing a promise', () => {
