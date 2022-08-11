@@ -1,6 +1,6 @@
 // This script will test calcul
 
-const { calculateNumber } = require('./1-calcul.js');
+const calculateNumber = require('./1-calcul');
 const assert = require('assert');
 
 describe('calculate Summation', () => {

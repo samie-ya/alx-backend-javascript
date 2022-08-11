@@ -1,6 +1,6 @@
 // This script will round number and sum it up
 
-module.exports.calculateNumber = (type, a, b) => {
+function calculateNumber (type, a, b) {
   if (type === 'SUM') {
     return Math.round(a) + Math.round(b);
   }
@@ -15,3 +15,5 @@ module.exports.calculateNumber = (type, a, b) => {
     }
   }
 };
+
+module.exports = calculateNumber;
