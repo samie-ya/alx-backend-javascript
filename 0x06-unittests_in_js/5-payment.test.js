@@ -1,11 +1,10 @@
 // This script will create a spy test
 
-const { Utils } = require('./utils.js');
-const { sendPaymentRequestToApi } = require('./4-payment.js');
+const Utils = require('./utils');
+const sendPaymentRequestToApi = require('./4-payment');
 const sinon = require('sinon');
 const chai = require('chai');
 const expect = chai.expect;
-const assert = require('assert');
 
 describe('Testing sendPaymentRequestToApi', () => {
   beforeEach(() => {
@@ -13,7 +12,7 @@ describe('Testing sendPaymentRequestToApi', () => {
   });
 
   afterEach(() => {
-    sinon.restore()
+    sinon.restore();
   });
 
   it('Testing sendPaymentRequestToApi with 100, 20', () => {
